@@ -32,6 +32,9 @@ Route::get('delete_data/{id}', 'App\Http\Controllers\Icontroller@delete_data');
 Route::get('display_form/{id}', 'App\Http\Controllers\Icontroller@edit_data');
 Route::get('display_paginate/{id}', 'App\Http\Controllers\Icontroller@edit_data');
 
+//noaccess
+Route::view('noaccess', 'crud/noaccess');
+
 //edit data edit
 Route::post('edit_insert/{id}', 'App\Http\Controllers\Icontroller@edit_insert');
 
